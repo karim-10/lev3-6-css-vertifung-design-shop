@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Karla', sans-serif;
+    color: #323A45;
+    margin: 0 5%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+header h1{
+    font-size: 2em;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    padding-left: 50px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #323A45;
+    font-size: 1.1em;
+}
+
+ul li a:hover{
+    color: gray;
+}
+
+
+/* ______________________main  /   section 1 */
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 20px;      
+}
+img{
+    width: 100%;
+}
+
+main section div {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding-top: 10px; 
+    margin-bottom: 20px;
+}
+main section a:hover{
+    color: #848484;
+    opacity: 0.6;
+}
+main section div p:nth-of-type(1){
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+main section div p:nth-of-type(3){
+    color: #848484;
+    font-weight: 100;
+}
+
+main section:nth-of-type(7n+1){
+    grid-column: span 3;
+}
+
+
+/* _________________ footer  */
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 50px;
+} 
+/* _________the design shop */
+article:nth-of-type(1) p{
+    padding-top: 30px;
+    line-height: 1.5em;
+}
+article:nth-of-type(1) p a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+/* ___________ Contact */
+article:nth-of-type(2) {
+    justify-self: center;
+    
+}
+article:nth-of-type(2) h3:nth-of-type(1){
+    padding-top: 30px;
+    line-height: 1.5em;
+}
+article:nth-of-type(2) h3 a{
+    text-decoration: none;
+    color: #323A45;;
+}
+
+/* ____________ Newsletter */
+
+article:nth-of-type(3) h3:nth-of-type(1){
+    padding-top: 30px;
+    line-height: 1.5em;
+}
+article:nth-of-type(3) h3:nth-of-type(1) a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+article:nth-of-type(3) h3:nth-of-type(2){
+    font-style: italic;
+}
+
+/* ______________Find Us Here */
+article:nth-of-type(4) h4{
+    line-height: 1.5em;
+}
+article:nth-of-type(4) h4 a{
+    text-decoration: none;
+    color: black;
+}
+article:nth-of-type(4) h4 a:hover{
+    color: gray;
+}
+article:nth-of-type(4) h4:nth-of-type(1){
+    padding-top: 30px;
+    
+}
+
+
+footer div {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: #848484;
+}
+
+
+/* Media */
